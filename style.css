@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+
+
+/*Colori*/
+.grey {
+  color: #818181;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -12,7 +19,7 @@ body {
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 
-.wrapper_esterno{
+.sfondo{
   background-image: linear-gradient(to bottom, #009688 0px, #009688 130px, #dddbd1 101px, #d2dbdc 100%);
   height: 100%;
   padding: 20px;
@@ -23,25 +30,69 @@ body {
   height: 100%;
   width: 65%;
   margin: 0 auto;
-  border-radius: 3px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.02);
+  min-width: 800px;
 }
-
+/* SIDEBAR LEFT */
 .sidebar_left{
   background: red;
   width: 400px;
   height: 100%;
   float: left;
-  border-top-left-radius:  3px;
-  border-bottom-left-radius: 3px;
 }
 
+.search_area{
+  height: 45px;
+  width: 100%;
+  background: pink;
+}
+
+.contact_area{
+  height: calc(100% - 110px);
+  width: 100%;
+  background: green;
+  overflow: auto;
+}
+
+.contact{
+  height: 100px;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid red;
+}
+
+
+
+
+/* MAIN */
 .main{
-  background: blue;
   height: 100%;
   width: calc(100% - 400px);
+  background: blue;
   float: left;
-  border-top-right-radius:3px;
-  border-bottom-right-radius: 3px;
+}
+.main .header{
+  border-left: 1px solid rgba(0, 0, 0, 0.09);
+}
 
+.chat_area{
+  height: calc(100% - 130px);
+  width: 100%;
+  background: orange;
+}
+
+.write_area{
+  height:65px;
+  width: 100%;
+  background:grey;
+}
+
+
+
+/* HEADER */
+
+.header{
+  height: 65px;
+  width: 100%;
+  background-color: #eeeeee;
 }
