@@ -61,29 +61,59 @@ body {
 }
 
 .botton_area ul{
-list-style: none;
-height: 100%;
-width: 100%;
+  list-style: none;
+  height: 100%;
+  width: 100%;
 }
 
 .botton_area ul li{
-display: inline-block;
-float: right;
-margin-left: 20px;
-margin-top: 20px;
-
+  display: inline-block;
+  float: right;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 
 .search_area{
-  height: 45px;
+  height: 60px;
   width: 100%;
   background: #fafafa;
   border-bottom: 1px solid lightgrey;
+  padding: 10px;
+  align-content: center;
 }
 
+.search_icon{
+  height: 100%;
+  width: 10%;
+  background: white;
+  float: left;
+  text-align: center;
+}
+
+.search_icon img{
+  margin-top: 10px;
+}
+
+.search_form{
+  height: 100%;
+  width: 90%;
+  background: white;
+  float: left;
+}
+
+.search_form input{
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-style: none;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+
 .contact_area{
-  height: calc(100% - 110px);
+  height: calc(100% - 125px);
   width: 100%;
   background: green;
   overflow: auto;
@@ -116,10 +146,8 @@ font-weight: normal;
 }
 
 .contact .contact_data h2{
-margin-top: 10px;
+  margin-top: 10px;
 }
-
-
 
 
 /* MAIN */
@@ -141,24 +169,56 @@ margin-top: 10px;
 }
 
 .contact_data p{
-color: #818181;
+  color: #818181;
 }
 
 .main .header .botton_area{
-width: calc(100% - 285px);
+  width: calc(100% - 285px);
 }
 
 .chat_area{
   height: calc(100% - 130px);
   width: 100%;
   background-image: url('background-chat.png');
+  padding: 0 40px;
+  overflow: auto;
 }
 
 .write_area{
   height:65px;
   width: 100%;
   background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.icon_message{
+  margin: 0 20px;
+  cursor: pointer;
+}
+#write_area{
+  width: 100%;
+  height:40px;
+  padding-left: 10px;
+  border-radius: 20px;
+  border-style: none;
+  font-size: 12px;
+}
+#registra_audio, #invia_messaggio{
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+#registra_audio{
+display: block;
+}
+
+#invia_messaggio{
+display: none;
+}
+
+
+
 
 
 
