@@ -41,10 +41,45 @@ body {
   float: left;
 }
 
+.foto_profilo{
+  height: 100%;
+  width: 65px;
+  float: left;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.foto_profilo img{
+  height: 100%;
+  border-radius: 25px;
+}
+
+.botton_area{
+  height: 100%;
+  width: calc(100% - 65px);
+  float: left;
+}
+
+.botton_area ul{
+list-style: none;
+height: 100%;
+width: 100%;
+}
+
+.botton_area ul li{
+display: inline-block;
+float: right;
+margin-left: 20px;
+margin-top: 20px;
+
+}
+
+
 .search_area{
   height: 45px;
   width: 100%;
-  background: pink;
+  background: #fafafa;
+  border-bottom: 1px solid lightgrey;
 }
 
 .contact_area{
@@ -55,10 +90,33 @@ body {
 }
 
 .contact{
-  height: 100px;
+  height: 80px;
   width: 100%;
   background: white;
-  border-bottom: 1px solid red;
+}
+
+.contact .foto_profilo{
+  height: 100%;
+  width: 80px;
+  padding: 10px;
+}
+
+.contact .foto_profilo img{
+  border-radius: 50px;
+}
+
+.contact_data h2{
+font-weight: normal;
+}
+
+.contact .contact_data{
+  width: calc(100% - 80px);
+  float: left;
+  border-bottom: 1px solid lightgrey;
+}
+
+.contact .contact_data h2{
+margin-top: 10px;
 }
 
 
@@ -75,16 +133,31 @@ body {
   border-left: 1px solid rgba(0, 0, 0, 0.09);
 }
 
+.contact_data{
+  float: left;
+  height: 100%;
+  width: 220px;
+  padding: 10px;
+}
+
+.contact_data p{
+color: #818181;
+}
+
+.main .header .botton_area{
+width: calc(100% - 285px);
+}
+
 .chat_area{
   height: calc(100% - 130px);
   width: 100%;
-  background: orange;
+  background-image: url('background-chat.png');
 }
 
 .write_area{
   height:65px;
   width: 100%;
-  background:grey;
+  background-color: #eeeeee;
 }
 
 
