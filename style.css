@@ -226,11 +226,11 @@ font-weight: lighter;
 color: #818181;
 }
 
+/* AREA MESSAGGI */
 
 .right .right_message_container{
   width: 100%;
   height: calc(100% - 65px - 65px);
-  background: blue;
 }
 
 .right .right_message{
@@ -238,8 +238,42 @@ color: #818181;
   height: 100%;
   background-image: url('mine.jpg');
   padding: 20px 40px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
+
+.message{
+  margin: 10px 0;
+  padding: 10px;
+  max-width: 60%;
+  min-width: 20%;
+  background: white;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.message .orario{
+  text-align: right;
+  font-size: 10px;
+  color: #818181;
+  display: block;
+  margin-top: 6px;
+}
+
+.message.ricevuto{
+  background: white;
+}
+
+.message.inviato{
+  background: #D5F9BA;
+  float: right;
+}
+
+.template{
+  display: none;
+  position: relative;
+}
+
+/* FOOTER */
 
 .right .right_footer{
   height: 65px;
@@ -262,7 +296,7 @@ color: #818181;
 margin: auto;
 }
 
-.right .right_footer .new_message_input{
+#new_message_input{
   width: calc(100% - 65px - 65px);
   height: 40px;
   border: 0;
@@ -271,6 +305,6 @@ margin: auto;
   color: #818181;
 }
 
-.right .right_footer .new_message_input::placeholder{
+#new_message_input::placeholder{
 color: lightgray;
 }
