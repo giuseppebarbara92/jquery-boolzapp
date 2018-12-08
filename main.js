@@ -48,6 +48,7 @@
 // Risposta dall’interlocutore: ​​ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta, che apparirà dopo 1 secondo.
 // Milestone 1 + 2)
 $(document).ready(function(){
+
   $('#new_message_input').keypress(function(event){
     if (event.which == 13) {
 // Prendiamo il value dell'new_message_input
@@ -73,6 +74,7 @@ $(document).ready(function(){
       // Poi devo resettare il testo, altrimenti ogni volta che faccio invio mi rimane quello precedente
       $('#new_message_input').val('');
 // Milestone 2)
+// (Milestone 2 parte 1) RISPOSTA DA PARTE DEL PC CHE AD OGNI NOSTRO MESSAGGIO RISPONDE CON UN OK
       setTimeout(function(){
         var rispostaComputer = $('.template .message.ricevuto').clone();
         rispostaComputer.children('.testo_messaggio').text('ok');
@@ -83,4 +85,28 @@ $(document).ready(function(){
       }, 2000);
     }
   });
+
+  // (Milesteone 2 parte 2)
+  $('.left_searchbar_input').keyup(function(){
+    var thisValue = $(this).val().toLowerCase();
+    console.log(thisValue);
+    // .toLowerCase()----> metodo di jacascript, mi trasforma tutto in minuscolo anche se scrivo Maiuscolo
+
+
+    // .each()-----> sarebbe il ciclo di jquery
+    // Fatto questo, posso fare in modo che se qualcuno scrive dentro search, ciclo per verificare che quel nome sia presente dentro contact
+     $('.contact').each(function(){
+       var contactName = $(this).find('.contact_name').text().toLowerCase();
+
+       if (contactName.includes(thisValue)) {
+         $(this).show();
+       }
+       else {
+         $(this).hide();
+       }
+     });
+
+  });
+
+
 });
